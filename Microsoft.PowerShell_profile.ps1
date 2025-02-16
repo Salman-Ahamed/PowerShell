@@ -1,8 +1,12 @@
-oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/kushal.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/if_tea.omp.json' | Invoke-Expression
 
 
 #Enable icons
 Import-Module -Name Terminal-Icons
+
+# Alias
+Set-Alias c code
+Set-Alias cur cursor
 
 <# new 
     kushal
