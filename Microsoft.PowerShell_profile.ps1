@@ -5,8 +5,27 @@ oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/
 Import-Module -Name Terminal-Icons
 
 # Alias
+function Run-Dev {
+    bun run dev
+}
+function Run-Build {
+    bun run build
+}
+function Prisma-Generate {
+    bun prisma generate
+}
+function Prisma-DB-Push {
+    prisma db push
+}
+
 Set-Alias c code
 Set-Alias cur cursor
+Set-Alias b "bun run"
+Set-Alias rd Run-Dev
+Set-Alias rb Run-Build
+Set-Alias p Prisma
+Set-Alias pg Prisma-Generate
+Set-Alias pp Prisma-DB-Push
 
 <# new 
     kushal
