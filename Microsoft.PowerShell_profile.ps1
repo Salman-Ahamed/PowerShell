@@ -11,7 +11,7 @@ function Prisma-Generate { bun prisma generate }
 function Prisma-DB-Push { prisma db push }
 
 Set-Alias c code
-Set-Alias cur cursor
+Set-Alias cc cursor
 Set-Alias b "bun run"
 Set-Alias rd Run-Dev
 Set-Alias rb Run-Build
